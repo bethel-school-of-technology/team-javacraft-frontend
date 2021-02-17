@@ -1,0 +1,35 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "name": "Cheeseburger",
+            "description": [
+                "Bun",
+                "Beef Patty",
+                "Swiss Cheese",
+                "Lettuce",
+                "Tomato",
+                "Onion"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Baked Spaghetti",
+            "description": [
+                "Noodles",
+                "Tomato Sauce",
+                "Meatballs",
+                "Mozzerella Cheese"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Pepperoni Pizza",
+            "description": [
+                "Marinara Sauce",
+                "Mozzerella Cheese",
+                "Pepperoni"
+            ]
+        }
+    ]
+}
