@@ -1,28 +1,35 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { AboutComponent } from './about/about.component';
-import { CartComponent } from './cart/cart.component';
-import { CheckoutComponent } from './checkout/checkout.component';
-import { LocationComponent } from './location/location.component';
-import { MenuItemsComponent } from './menu-items/menu-items.component';
-import { ReviewsComponent } from './reviews/reviews.component';
-import { HomeComponent } from './home/home.component';
+import { CartComponent } from './homePageComponents/cart/cart.component';
+import { LocationComponent } from '../app/homePageComponents/location/location.component';
+import { MenuItemsComponent } from './homePageComponents/menu-items/menu-items.component';
+import { HomeComponent } from '../app/homePageComponents/home/home.component';
+import { ReservationsComponent } from './homePageComponents/reservations/reservations.component';
+import { BioComponent } from './homePageComponents/bio/bio.component';
+import { ReviewsPageComponent } from './homePageComponents/reviews-page/reviews-page.component';
+import { TannerComponent } from './homePageComponents/tanner/tanner.component';
+import { JdComponent } from './homePageComponents/jd/jd.component';
+import { JonComponent } from './homePageComponents/jon/jon.component';
 
 const routes: Routes = [
   { path: "", redirectTo:"home", pathMatch: "full"},
   { path: "home", component: HomeComponent },
   { path: "menu", component: MenuItemsComponent },
-  { path: "about", component: AboutComponent },
-  { path: "reviews", component: ReviewsComponent },
+  { path: "about", component: BioComponent },
+  { path: "reviews", component: ReviewsPageComponent },
   { path: "location", component: LocationComponent },
+  { path: "reservations", component: ReservationsComponent },
   { path: "cart", component: CartComponent },
-  { path: "checkout", component: CheckoutComponent },
+  { path: "tanner", component: TannerComponent },
+  { path: "jd", component: JdComponent },
+  { path: "jon", component: JonComponent },
+  
 
 ];
 
 @NgModule({
-  imports: [CommonModule, RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
