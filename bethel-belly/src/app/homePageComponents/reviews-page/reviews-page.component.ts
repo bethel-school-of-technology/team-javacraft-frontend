@@ -9,6 +9,10 @@ export class ReviewsPageComponent implements OnInit {
 
   constructor() { }
 
+  myFunction() {
+    alert("REVIEW SUBMITTED!");
+  }
+
   ngOnInit(): void {
   }
 

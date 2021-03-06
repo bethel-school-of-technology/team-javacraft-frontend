@@ -10,9 +10,9 @@ export class BioComponent implements OnInit {
   constructor() {
 
   }
-  myFunction() {
-    alert("I am an alert box!");
-  }
+
   ngOnInit(): void {}
 
 }
+
+

@@ -9,6 +9,10 @@ export class ReservationsComponent implements OnInit {
 
   constructor() { }
 
+  myFunction() {
+    alert("RESERVATION MADE!");
+  }
+
   ngOnInit(): void {
   }
 

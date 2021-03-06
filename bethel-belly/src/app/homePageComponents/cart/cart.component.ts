@@ -9,6 +9,10 @@ export class CartComponent implements OnInit {
 
   constructor() { }
 
+  myFunction() {
+    alert("ORDER PLACED!");
+  }
+
   ngOnInit(): void {
   }
 
