@@ -1,12 +1,13 @@
+
 .top-nav {
     background-color: white;
     overflow: hidden;
-    position: absolute; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
-/* Style the links inside the navigation bar */
+
 .top-nav a {
   float: left;
   color: black;
@@ -17,19 +18,19 @@
   text-decoration: none;
 }
 
-/* Change the color of links on hover */
+
 .top-nav a:hover {
   background-color: #ddd;
   color: black;
 }
 
-/* Add a color to the active/current link */
+
 .top-nav a.active {
   background-color: #c3b795;
   color: white;
 }
 
-/* Right-aligned section inside the top navigation */
+
 .nav-right {
   float: right;
   padding: 22px;
