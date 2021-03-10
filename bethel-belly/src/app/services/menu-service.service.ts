@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { MenuItem } from '../models/menuItem';
 import { Observable, of } from 'rxjs'
-
+// import { CartService } from '../cart.service';
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +17,8 @@ export class MenuService {
         " Lettuce",
         " Tomato",
         " Onion"
-      ]
+      ],
+      price: 10.99
     },
     {
       id: 2,
@@ -27,7 +28,8 @@ export class MenuService {
         " Tomato Sauce",
         " Meatballs",
         " Mozzerella Cheese"
-      ]
+      ],
+      price: 8.99
     },
     {
       id: 3,
@@ -37,7 +39,8 @@ export class MenuService {
         " Marinara Sauce",
         " Mozzerella Cheese",
         " Pepperoni"
-      ]
+      ],
+      price: 4.99
     }
   ]
   static menuItems: any;
