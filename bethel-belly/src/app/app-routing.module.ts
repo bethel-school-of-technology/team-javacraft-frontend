@@ -11,6 +11,7 @@ import { ReviewsPageComponent } from './homePageComponents/reviews-page/reviews-
 import { TannerComponent } from './homePageComponents/tanner/tanner.component';
 import { JdComponent } from './homePageComponents/jd/jd.component';
 import { JonComponent } from './homePageComponents/jon/jon.component';
+import { LoginComponent } from './homePageComponents/login/login.component'
 
 const routes: Routes = [
   { path: "", redirectTo:"home", pathMatch: "full"},
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: "tanner", component: TannerComponent },
   { path: "jd", component: JdComponent },
   { path: "jon", component: JonComponent },
+  { path: "login", component: LoginComponent },
   
 
 ];

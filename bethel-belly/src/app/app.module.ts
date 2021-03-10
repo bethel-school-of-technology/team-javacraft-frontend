@@ -20,7 +20,8 @@ import { BioComponent } from './homePageComponents/bio/bio.component';
 import { ReviewsPageComponent } from './homePageComponents/reviews-page/reviews-page.component';
 import { TannerComponent } from './homePageComponents/tanner/tanner.component';
 import { JdComponent } from './homePageComponents/jd/jd.component';
-import { JonComponent } from './homePageComponents/jon/jon.component'
+import { JonComponent } from './homePageComponents/jon/jon.component';
+import { LoginComponent } from './homePageComponents/login/login.component'
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { JonComponent } from './homePageComponents/jon/jon.component'
     ReviewsPageComponent,
     TannerComponent,
     JdComponent,
-    JonComponent
+    JonComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
