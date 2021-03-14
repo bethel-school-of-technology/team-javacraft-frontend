@@ -1,6 +1,7 @@
 export class Menu {
-    Id!: string;
-    Name!: string;
-    Description!: string;
-    Price!: string;
+    _id!: string;
+    name!: string;
+    description!: string;
+    price!: string;
+    category!: string;
 }
