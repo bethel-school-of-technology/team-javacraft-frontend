@@ -33,4 +33,7 @@ export class MenuService {
   getDessert(): Observable<Menu[]>{
     return this.http.get<Menu[]>(this.dessertUrl)
   };
+  postBreakfast(name:string, description:string, price:string) {
+    return this.http.post(this.breakfastUrl,{name,description,price})
+  };
 }
