@@ -11,7 +11,11 @@ import { ReviewsPageComponent } from './homePageComponents/reviews-page/reviews-
 import { TannerComponent } from './homePageComponents/tanner/tanner.component';
 import { JdComponent } from './homePageComponents/jd/jd.component';
 import { JonComponent } from './homePageComponents/jon/jon.component';
-import { LoginComponent } from './homePageComponents/login/login.component'
+import { LoginComponent } from './homePageComponents/login/login.component';
+import { BreakfastComponent } from './homePageComponents/breakfast/breakfast.component'
+import { LunchComponent } from './homePageComponents/lunch/lunch.component';
+import { DinnerComponent } from './homePageComponents/dinner/dinner.component';
+import { DessertComponent } from './homePageComponents/dessert/dessert.component';
 
 const routes: Routes = [
   { path: "", redirectTo:"home", pathMatch: "full"},
@@ -26,6 +30,10 @@ const routes: Routes = [
   { path: "jd", component: JdComponent },
   { path: "jon", component: JonComponent },
   { path: "login", component: LoginComponent },
+  { path: "menu/breakfast", component: BreakfastComponent },
+  { path: "menu/lunch", component: LunchComponent },
+  { path: "menu/dinner", component: DinnerComponent },
+  { path: "menu/dessert", component: DessertComponent }
   
 
 ];

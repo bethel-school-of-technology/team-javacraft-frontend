@@ -21,7 +21,12 @@ import { ReviewsPageComponent } from './homePageComponents/reviews-page/reviews-
 import { TannerComponent } from './homePageComponents/tanner/tanner.component';
 import { JdComponent } from './homePageComponents/jd/jd.component';
 import { JonComponent } from './homePageComponents/jon/jon.component';
-import { LoginComponent } from './homePageComponents/login/login.component'
+import { LoginComponent } from './homePageComponents/login/login.component';
+import { BreakfastComponent } from './homePageComponents/breakfast/breakfast.component';
+import { LunchComponent } from './homePageComponents/lunch/lunch.component';
+import { DinnerComponent } from './homePageComponents/dinner/dinner.component';
+import { DessertComponent } from './homePageComponents/dessert/dessert.component';
+
 
 @NgModule({
   declarations: [
@@ -42,7 +47,11 @@ import { LoginComponent } from './homePageComponents/login/login.component'
     TannerComponent,
     JdComponent,
     JonComponent,
-    LoginComponent
+    LoginComponent,
+    BreakfastComponent,
+    LunchComponent,
+    DinnerComponent,
+    DessertComponent
   ],
   imports: [
     BrowserModule,
