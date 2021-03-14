@@ -10,10 +10,27 @@ import { Menu } from '../models/menu';
 export class MenuService {
 
   private baseUrl: string = "http://localhost:3000/items/"
+  private breakfastUrl: string = "http://localhost:3000/items/breakfast/"
+  private lunchUrl: string = "http://localhost:3000/items/lunch"
+  private dinnerUrl: string = "http://localhost:3000/items/dinner"
+  private dessertUrl: string = "http://localhost:3000/items/dessert"
+  
 
   constructor(private http: HttpClient) { }
 
   getAllItems(): Observable<Menu[]>{
     return this.http.get<Menu[]>(this.baseUrl);
-  }
+  };
+  getBreakfast(): Observable<Menu[]>{
+    return this.http.get<Menu[]>(this.breakfastUrl)
+  };
+  getLunch(): Observable<Menu[]>{
+    return this.http.get<Menu[]>(this.lunchUrl)
+  };
+  getDinner(): Observable<Menu[]>{
+    return this.http.get<Menu[]>(this.dinnerUrl)
+  };
+  getDessert(): Observable<Menu[]>{
+    return this.http.get<Menu[]>(this.dessertUrl)
+  };
 }
