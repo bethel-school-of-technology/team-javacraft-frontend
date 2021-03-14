@@ -1,15 +1,19 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { WebRequestService } from './web-request.service'
-import { Observable } from 'rxjs'
+import { Observable } from 'rxjs';
+import { Menu } from '../models/menu';
+
 
 @Injectable({
   providedIn: 'root'
 })
-export class ItemService {
+export class MenuService {
 
-  constructor(private webRequestService: WebRequestService) { }
+  private baseUrl: string = "http://localhost:3000/items/"
 
-  getAllItems(name:string, description:string, price:string, category:string){
-    return this.webRequestService.get('items');
+  constructor(private http: HttpClient) { }
+
+  getAllItems(): Observable<Menu[]>{
+    return this.http.get<Menu[]>(this.baseUrl);
   }
 }

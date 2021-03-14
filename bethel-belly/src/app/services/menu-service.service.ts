@@ -7,7 +7,7 @@ import { Observable, of } from 'rxjs'
   providedIn: 'root'
 })
 
-export class MenuService {
+export class MenuServiceService {
   menuItems: MenuItem[] = [
     {
       id: 1,
