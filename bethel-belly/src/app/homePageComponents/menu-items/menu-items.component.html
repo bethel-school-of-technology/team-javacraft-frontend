@@ -1,8 +1,21 @@
 <div class="header">
   <img src="../../../assets/images/menu.png">
 </div>
-<div class="menu-items">
-
-</div> 
+<div class="container">
+    <table class="table table-bordered">
+      <thead>
+        <th>Item</th>
+        <th>Description</th>
+        <th>Price</th>
+      </thead>
+      <tbody>
+        <tr class="menu-items" *ngFor="let item of items">
+          <td>{{ item.name }}</td>
+          <td>{{ item.description }}</td>
+          <td>{{ item.price }}</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
 
   
