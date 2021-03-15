@@ -21,9 +21,10 @@ export class DinnerComponent implements OnInit {
   }
 
   sendToCart(){
-    this.menuService.postMenuItem('Dinner Food','Food that is Breakfast', '10.99').subscribe((result: any)=>{
+    this.menuService.postMenuItem('Dinner Food','Food that is Dinner', '10.99').subscribe((result: any)=>{
       console.log(result)
       this.items = result;
+      alert('Item added to your cart!');
     });
   }
 }

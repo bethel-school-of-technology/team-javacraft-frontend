@@ -24,6 +24,7 @@ export class DessertComponent implements OnInit {
     this.menuService.postMenuItem('Dessert Food','Food that is Dessert', '10.99').subscribe((result: any)=>{
       console.log(result)
       this.items = result;
+      alert('Item added to your cart!');
     });
   }
 }
