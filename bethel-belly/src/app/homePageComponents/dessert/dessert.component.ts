@@ -19,4 +19,11 @@ export class DessertComponent implements OnInit {
       this.items = result;
     });
   }
+
+  sendToCart(){
+    this.menuService.postMenuItem('Dessert Food','Food that is Dessert', '10.99').subscribe((result: any)=>{
+      console.log(result)
+      this.items = result;
+    });
+  }
 }
