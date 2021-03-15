@@ -1,11 +1,28 @@
 <div class="header">
     <img src="../../../assets/images/shoppingCartPhoto2.png">
 </div>
-<div class="row">
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+      <div class="menu-section">
+        <h2 class="menu-section-title">Dinner</h2>
+        <div class="menu-items" *ngFor="let item of items">
+          <br>
+          <div class="menu-item-name">{{ item.name }}  ${{ item.price }}</div>
+
+          <div class="menu-item-description">{{ item.description }}</div>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div class="row">
   <div class="col-75">
     <div class="container">
       <form action="/action_page.php">
-      
+
         <div class="row">
           <div class="col-50">
             <h3>Billing Address</h3>
@@ -56,7 +73,7 @@
               </div>
             </div>
           </div>
-          
+
         </div>
         <label>
           <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
@@ -76,4 +93,4 @@
       <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
     </div>
   </div>
-</div>
+</div> -->
