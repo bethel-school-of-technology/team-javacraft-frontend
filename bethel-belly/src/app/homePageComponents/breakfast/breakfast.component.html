@@ -6,14 +6,8 @@
           <h2 class="menu-section-title">Breakfast</h2>
           <div class="menu-items" *ngFor="let item of items">
             <br>
-<<<<<<< HEAD
-            <div class="menu-item-name">{{ item.name }}</div>
-            <div class="menu-item-price">${{ item.price }}</div>
-            <button (click)="sendToCart()">Add to Cart</button>
-=======
             <div class="menu-item-name">{{ item.name }}  ${{ item.price }}</div>
-            <div class="menu-item-price"><button>Add to Cart</button></div>
->>>>>>> dev
+            <div class="menu-item-price"><button (click)="sendToCart()">Add to Cart</button></div>
             <div class="menu-item-description">{{ item.description }}</div>
             <br>
           </div>
