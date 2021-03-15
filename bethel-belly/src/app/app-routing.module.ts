@@ -16,6 +16,7 @@ import { BreakfastComponent } from './homePageComponents/breakfast/breakfast.com
 import { LunchComponent } from './homePageComponents/lunch/lunch.component';
 import { DinnerComponent } from './homePageComponents/dinner/dinner.component';
 import { DessertComponent } from './homePageComponents/dessert/dessert.component';
+import { PostBreakfastComponent } from './postComponents/post-breakfast/post-breakfast.component';
 
 const routes: Routes = [
   { path: "", redirectTo:"home", pathMatch: "full"},
@@ -33,7 +34,8 @@ const routes: Routes = [
   { path: "menu/breakfast", component: BreakfastComponent },
   { path: "menu/lunch", component: LunchComponent },
   { path: "menu/dinner", component: DinnerComponent },
-  { path: "menu/dessert", component: DessertComponent }
+  { path: "menu/dessert", component: DessertComponent },
+  { path: "menu/post", component: PostBreakfastComponent }
   
 
 ];
