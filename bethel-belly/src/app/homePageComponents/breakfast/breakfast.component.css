@@ -2,6 +2,8 @@
     padding: 0px;
     margin-left: 10%;
     margin-right: 10%;
+    background-color: #ddd;
+    border-radius: 24px;
 }
 #restaurant-menu img {
 	width: 300px;
@@ -21,7 +23,7 @@
 	font-size: 32px;
 	display: block;
 	font-weight: 400;
-	color: #444;
+	color: #c3b795;
 	margin: 20px 0;
 	text-align: center;
 }
@@ -32,7 +34,7 @@
 #restaurant-menu .menu-item-name {
 	font-weight: 400;
 	font-size: 20px;
-	color: #444;
+	color: #c3b795;
 	margin-bottom: 10px;
 }
 #restaurant-menu .menu-item-description {
@@ -42,7 +44,7 @@
 #restaurant-menu .menu-item-price {
 	float: right;
 	font-weight: 400;
-	color: #555;
+	color: #c3b795;
 	margin-top: -36px;
 }
 button {
