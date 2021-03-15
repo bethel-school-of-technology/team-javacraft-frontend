@@ -20,4 +20,11 @@ export class MenuItemsComponent implements OnInit {
       this.items = result;
     });
   }
+
+  // sendToCart(){
+  //   this.menuService.postMenuItem('test','test','test').subscribe((result: any)=>{
+  //     console.log(result)
+  //     this.items = result;
+  //   });
+  // }
 }

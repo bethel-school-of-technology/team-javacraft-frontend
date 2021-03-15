@@ -42,4 +42,9 @@ export class MenuService {
   postBreakfast(name:string, description:string, price:string) {
     return this.http.post(cartUrl,{name,description,price})
   };
+
+  postMenuItem(name:string, description:string, price:string) {
+    return this.http.post(cartUrl,{name,description,price})
+  };
+
 }
