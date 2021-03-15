@@ -4,13 +4,14 @@
 
 <div id="restaurant-menu">
   <div class="container">
+    <h2>Your Cart</h2>
     <div class="row">
       <div class="col-xs-12 col-sm-6">
         <div class="menu-section">
           <h2 class="menu-section-title"></h2>
           <div class="menu-items" *ngFor="let item of items">
             <br>
-            <div class="menu-item-name">{{ item.name }}  ${{ item.price }}</div>
+            <div class="menu-item-name">{{ item.name + ':' }}  ${{ item.price }}</div>
             <div class="menu-item-description">{{ item.description }}</div>
             <br>
           </div>
