@@ -7,7 +7,7 @@
           <div class="menu-items" *ngFor="let item of items">
             <br>
             <div class="menu-item-name">{{ item.name }}  ${{ item.price }}</div>
-            <div class="menu-item-price"><button>Add to Cart</button></div>
+            <div class="menu-item-price"><button (click)="sendToCart()">Add to Cart</button></div>
             <div class="menu-item-description">{{ item.description }}</div>
             <br>
           </div>

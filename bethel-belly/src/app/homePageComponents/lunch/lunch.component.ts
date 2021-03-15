@@ -19,4 +19,11 @@ export class LunchComponent implements OnInit {
       this.items = result;
     });
   }
+  sendToCart(){
+    this.menuService.postMenuItem('Lunch Food','Food that is Lunch', '10.99').subscribe((result: any)=>{
+      console.log(result)
+      this.items = result;
+      alert('Item added to your cart!');
+    });
+  }
 }

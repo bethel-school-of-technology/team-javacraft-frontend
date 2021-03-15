@@ -23,6 +23,7 @@ export class BreakfastComponent implements OnInit {
     this.menuService.postMenuItem('Breakfast Food','Food that is Breakfast', '10.99').subscribe((result: any)=>{
       console.log(result)
       this.items = result;
+      alert('Item added to your cart!');
     });
   }
 }
